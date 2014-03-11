@@ -1,0 +1,62 @@
+<?php
+define ("IVA",3.14);
+$huevo=20;
+$leche=50;
+$frijol=30;
+$pan=10;
+$coca=38;
+
+$SubTotal=$huevo+$leche+$frijol+$pan+$coca;
+$Iva=$SubTotal*IVA;
+$Total=$SubTotal+$iva;
+
+
+
+?>
+
+
+<html>
+<head>
+<title>Practica1</title>
+</head>
+
+<body >
+
+<table border="2" style="width:800px">
+<tr>
+	<td>Producto1</td>
+	<td><?php echo ("$".$huevo);?></td>
+</tr>
+<tr>
+	<td>Producto2</td>
+	<td><?php echo ("$".$leche);?></td>
+</tr>
+<tr>
+	<td>Producto3</td>
+	<td><?php echo ("$".$frijol);?></td>
+</tr>
+<tr>
+	<td>Producto4</td>
+	<td><?php echo ("$".$pan);?></td>
+</tr>
+<tr>
+	<td>Producto5</td>
+	<td><?php echo ("$".$coca);?></td>
+</tr>
+<tr>
+	<td>Subtotal</td>
+	<td><?php echo ("$".$SubTotal);?></td>
+</tr>
+<tr>
+	<td>Iva</td>
+	<td><?php echo ("$".$Iva);?></td>
+</tr>
+<tr>
+	<td>Total</td>
+	<td><?php echo ("$".$Total);?></td>
+</tr>
+
+</table>
+
+</body>
+</html>
